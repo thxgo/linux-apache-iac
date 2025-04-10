@@ -2,7 +2,6 @@
 
 # IaC de provisionamento de servidor web
 
-
 # Atualização do sistema
 
 echo "Atualizando o sistema..."
@@ -13,7 +12,6 @@ sudo apt upgrade -y
 # Instalação dos pacotes necessários
 
 echo "Instalando pacotes necessários..."
-
 echo "Instalando apache2..."
 
 sudo apt install apache2 -y
@@ -31,7 +29,6 @@ sudo apt install unzip -y
 echo "Baixando a aplicação..."
 
 cd /tmp
-
 wget "https://github.com/denilsonbonatti/linux-site-dio/archive/refs/heads/main.zip"
 sudo unzip main.zip
 
