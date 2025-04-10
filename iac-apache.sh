@@ -18,7 +18,7 @@ echo "Instalando apache2..."
 
 sudo apt install apache2 -y
 
-# Fiz o reinicio do serviço para prevenção de possíveis problemas após a instalação.
+# Reinicio do Apache para garantir que o serviço funcione adequadamente.
 
 sudo systemctl restart apache2
 
@@ -28,17 +28,17 @@ sudo apt install unzip -y
 
 # Download da aplicação (site)
 
-echo "Instalando a aplicação..."
+echo "Baixando a aplicação..."
 
 cd /tmp
 
 wget "https://github.com/denilsonbonatti/linux-site-dio/archive/refs/heads/main.zip"
 sudo unzip main.zip
 
-echo "Implementando sua aplicação em um servidor apache..."
+echo "Implementando sua aplicação em um servidor Apache..."
 
-cd linux-site-dio/
-sudo cp -iR * /var/www/html/
+cd linux-site-dio-main/
+sudo cp -R * /var/www/html/
 
-echo "O sua aplicação está pronto para o acesso local. Acesse em um navegador com seu ip!"
+echo "Sua aplicação está pronto para o acesso. Acesse em um navegador com o IP deste servidor!"
 
